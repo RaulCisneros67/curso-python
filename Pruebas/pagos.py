@@ -1,3 +1,6 @@
+import hashlib
+
+
 tarjeta = 123456
 nip = 4819
 monto = 5000
@@ -6,6 +9,10 @@ monto = 5000
 
 
 datos = int(input("Numero de tarjeta: "))
+
+
+salida = hashlib.sha256(b"").hexdigest()
+print(salida)
 
 if datos == tarjeta:
     print("bienvenido señor Raul gilberto")
